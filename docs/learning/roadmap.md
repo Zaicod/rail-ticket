@@ -4,6 +4,7 @@
 
 | 阶段 | 学习内容 | 完成标准 |
 | --- | --- | --- |
+| 0. 对齐苍穹外卖知识 | 阅读 [分层与调用链对照](heima-to-12306.md)，区分 Maven 模块、业务分层与请求数据对象 | 找到登录接口的 Controller、Service、Mapper、DO、请求 DTO、响应 DTO |
 | 1. Java 与 Maven | Java 17、集合、异常、泛型、线程、注解；父子 POM、依赖传递、模块构建 | 能解释模块依赖，完成一次编译，并区分编译、打包和测试 |
 | 2. Spring Boot 与 Spring MVC | 自动配置、依赖注入、Controller → Service → Mapper、参数校验、异常处理、过滤器与拦截器 | 跟踪一个查询和一个登录请求，画出调用链 |
 | 3. MySQL 与事务 | 核心表关系、索引、条件更新、事务边界、隔离级别；之后再理解分片键 | 能说明订单与座位数据如何变化，保存一条查询的 EXPLAIN 分析 |
@@ -15,7 +16,7 @@
 
 ## 第一次阅读建议
 
-1. 先看根 `pom.xml`、`dependencies/pom.xml`，理解项目为什么由这么多模块组成。
+1. 先看 [苍穹外卖到 12306 对照指南](heima-to-12306.md)，再看根 `pom.xml`、`dependencies/pom.xml`，理解模块组织。
 2. 从 `UserLoginController` 进入，沿着 `UserLoginServiceImpl` 读一条完整链路。
 3. 从 `TicketController` 进入，阅读查询链路；再看 `StringRedisTemplateProxy.safeGet()`。
 4. 阅读 `TicketServiceImpl` 和 `TicketAvailabilityTokenBucket`，区分资格控制、座位分配和真正落库。

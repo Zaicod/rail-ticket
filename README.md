@@ -5,6 +5,7 @@
 当前阶段是原版导入与学习资料整理，尚未完成本机编译、启动及压测验证。下面的原项目介绍描述的是上游能力；个人增强功能以实现记录为准。
 
 - [从这里开始学习](docs/learning/README.md)
+- [苍穹外卖到 12306：分层与调用链对照](docs/learning/heima-to-12306.md)
 - [技术栈学习路线](docs/learning/roadmap.md)
 - [关键源码入口](docs/learning/source-map.md)
 - [个人贡献规划与验收条件](docs/learning/contributions.md)
