@@ -2,15 +2,16 @@
 
 基于 [nageoffer/12306](https://github.com/nageoffer/12306) 的个人 Java 后端学习项目，面向实习求职准备。保留原项目历史、署名和 Apache-2.0 许可证。
 
-当前阶段是原版导入与学习资料整理，尚未完成本机编译、启动及压测验证。下面的原项目介绍描述的是上游能力；个人增强功能以实现记录为准。
+当前阶段是源码学习和本机运行验证。2026-10-24 已完成聚合服务与网关打包启动，并验证车站查询、登录、Redis 登录态读取与退出删除；完整购票/支付流程及压测尚未验证。下面的原项目介绍描述的是上游能力；个人增强功能以实现记录为准。
 
 - [从这里开始学习](docs/learning/README.md)
+- [本机运行记录与启动方式](docs/learning/local-run.md)
 - [苍穹外卖到 12306：分层与调用链对照](docs/learning/heima-to-12306.md)
 - [技术栈学习路线](docs/learning/roadmap.md)
 - [关键源码入口](docs/learning/source-map.md)
 - [个人贡献规划与验收条件](docs/learning/contributions.md)
 
-主要技术：Java 17、Spring Boot 3、Spring MVC、Redis、MySQL、RocketMQ、Maven。Docker 部署编排为待实现内容。
+主要技术：Java 17、Spring Boot 3、Spring MVC、Redis、MySQL、RocketMQ、Maven。Docker 已用于本机中间件环境，可移植的一键部署交付仍待完善。
 
 本仓库：https://github.com/Zaicod/rail-ticket
 
